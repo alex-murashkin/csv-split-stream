@@ -11,8 +11,6 @@ const
 
 chai.use(require('chai-as-promised'));
 
-/*eslint no-console: 0*/
-
 describe('csv-split-stream', function() {
   let actualOutputs, expectedOutputs;
 

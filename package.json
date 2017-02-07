@@ -1,7 +1,7 @@
 {
   "name": "csv-split-stream",
   "version": "1.0.0",
-  "description": "Splitting streamed CSV file into multiple streams",
+  "description": "Splits a CSV read stream into multiple write streams by number of lines",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -27,8 +27,7 @@
   },
   "homepage": "https://github.com/AlexanderMS/csv-split-stream#readme",
   "dependencies": {
-    "byline": "5.0.0",
-    "chai": "^3.5.0"
+    "byline": "5.0.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
