@@ -9,8 +9,10 @@ function split(inputStream, opts, createOutputStreamCallback) {
   let chunkIndex = 0;
   let lineIndex = 0;
   let header;
-  options.delimiter = opts.delimiter || '\n';
-  options.lineLimit = opts.lineLimit;
+  const options = {
+    delimiter: opts.delimiter || '\n',
+    lineLimit: opts.lineLimit
+  };
 
   return new Promise((resolve, reject) => {
     assert(inputStream, 'Provide inputStream');
