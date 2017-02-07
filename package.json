@@ -1,7 +1,7 @@
 {
   "name": "csv-split-stream",
   "version": "1.0.0",
-  "description": "Splits a CSV read stream into multiple write streams by number of lines",
+  "description": "Splits a CSV read stream into multiple write streams",
   "main": "index.js",
   "directories": {
     "test": "test"
