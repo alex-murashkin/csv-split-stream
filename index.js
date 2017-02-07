@@ -4,12 +4,14 @@ const
   assert = require('assert'),
   byline = require('byline');
 
-function split(inputStream, options, createOutputStreamCallback) {
+function split(inputStream, opts, createOutputStreamCallback) {
   let outputStream = null;
   let chunkIndex = 0;
   let lineIndex = 0;
   let header;
-  options.delimiter = options.delimiter || '\n';
+  options.delimiter = opts.delimiter || '\n';
+  options.lineLimit = opts.lineLimit;
+
   return new Promise((resolve, reject) => {
     assert(inputStream, 'Provide inputStream');
     assert(options.lineLimit > 0, 'Provide non-negative lineLimit');
@@ -66,7 +68,10 @@ function split(inputStream, options, createOutputStreamCallback) {
         outputStream.end();
       }
 
-      resolve({chunkIndex});
+      resolve({
+        totalChunks: chunkIndex,
+        options: options
+      });
     });
   });
 }
