@@ -43,9 +43,9 @@ Splits a CSV read stream into multiple write streams
   const s3Stream       = require('s3-upload-stream')(new AWS.S3());
 
   function downloadAndSplit(callback) {
-    http.get({...}, downloadResponse => {
+    http.get({...}, downloadStream => {
       csvSplitStream.split(
-        downloadResponse,
+        downloadStream,
         {
           lineLimit: 10000
         },
