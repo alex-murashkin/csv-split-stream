@@ -1,0 +1,40 @@
+{
+  "name": "csv-split-stream",
+  "version": "1.0.0",
+  "description": "Splits a CSV read stream into multiple write streams",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "istanbul cover node_modules/mocha/bin/_mocha --",
+    "posttest": "eslint .",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderMS/csv-split-stream.git"
+  },
+  "keywords": [
+    "csv",
+    "split",
+    "stream"
+  ],
+  "author": "Alexandr Murashkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexanderMS/csv-split-stream/issues"
+  },
+  "homepage": "https://github.com/AlexanderMS/csv-split-stream#readme",
+  "dependencies": {
+    "byline": "5.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0",
+    "eslint": "3.12.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.2.0",
+    "sinon": "1.17.6"
+  }
+}
