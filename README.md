@@ -1,8 +1,8 @@
 # csv-split-stream
 
-[![npm version](https://badge.fury.io/js/csv-cplit-stream.svg)](https://badge.fury.io/js/csv-cplit-stream)
-[![CircleCI](https://circleci.com/gh/AlexanderMS/csv-cplit-stream.svg?style=shield)](https://circleci.com/gh/AlexanderMS/csv-cplit-stream)
-[![Coverage Status](https://coveralls.io/repos/github/AlexanderMS/csv-cplit-stream/badge.svg?branch=master)](https://coveralls.io/github/AlexanderMS/csv-cplit-stream?branch=master)
+[![npm version](https://badge.fury.io/js/csv-split-stream.svg)](https://badge.fury.io/js/csv-split-stream)
+[![CircleCI](https://circleci.com/gh/AlexanderMS/csv-split-stream.svg?style=shield)](https://circleci.com/gh/AlexanderMS/csv-split-stream)
+[![Coverage Status](https://coveralls.io/repos/github/AlexanderMS/csv-split-stream/badge.svg?branch=master)](https://coveralls.io/github/AlexanderMS/csv-split-stream?branch=master)
 
 Splits a CSV read stream into multiple write streams.
 
