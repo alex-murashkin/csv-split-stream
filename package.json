@@ -1,6 +1,6 @@
 {
   "name": "csv-split-stream",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Splits a CSV read stream into multiple write streams",
   "main": "index.js",
   "directories": {
