@@ -1,5 +1,10 @@
 # csv-split-stream
-Splits a CSV read stream into multiple write streams
+
+[![npm version](https://badge.fury.io/js/csv-cplit-stream.svg)](https://badge.fury.io/js/csv-cplit-stream)
+[![CircleCI](https://circleci.com/gh/AlexanderMS/csv-cplit-stream.svg?style=shield)](https://circleci.com/gh/AlexanderMS/csv-cplit-stream)
+[![Coverage Status](https://coveralls.io/repos/github/AlexanderMS/csv-cplit-stream/badge.svg?branch=master)](https://coveralls.io/github/AlexanderMS/csv-cplit-stream?branch=master)
+
+Splits a CSV read stream into multiple write streams.
 
 ## Install
 
@@ -7,7 +12,7 @@ Splits a CSV read stream into multiple write streams
 
 ## Usage
 
-1. Split a local CSV file into multiple CSV files (10000 lines each):
+1. Split a local CSV file into multiple CSV files (10000 lines each, excluding the header row):
 
   ```javascript
   const csvSplitStream = require('csv-split-stream');
